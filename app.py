@@ -3,6 +3,9 @@ import numpy as np
 import tensorflow as tf
 import cv2
 import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # Force TensorFlow to use CPU
+
+import os
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"  # Suppresses most logs
 
 app = Flask(__name__)
